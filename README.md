@@ -1,44 +1,68 @@
-![GA-Logo](https://camo.githubusercontent.com/6ce15b81c1f06d716d753a61f5db22375fa684da/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67) 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# React Giphy search
+## Available Scripts
 
-Create a React app that lets a user search the Giphy API for gifs. 
+In the project directory, you can run:
 
-There should be a search bar with a button.  When the user presses enter or the button, display the results of the search.
+### `npm start`
 
-Style it with Semantic UI React.  It should look nice.
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-<details>
-   <summary>Click here to see steps to install Semantic UI React</summary>
-      
-   1. `npm install semantic-ui-css`
-   2. `npm install semantic-ui-react`
-   3. Inside of `index.js`, above your `index.css`, `import 'semantic-ui-css/semantic.min.css';`
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-</details>
-<br />
+### `npm test`
 
-> Did you clear the form when the user searches? If not you probably should.
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Hungry for More?
+### `npm run build`
 
-Clicking a gif should open a `Details` modal with lots of info about that particular gif.
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Hungry for WAY More?  
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-1. Create dummy "login/logout" functionality:
-    * Put some text "Log in" on the top right that opens a "Login" modal. 
-    * After the user "logs in" (a dummy login...just store their username in state...and maybe a set a boolean `loggedIn` in state), the modal should disappear and the top right should now show "Logged in as [username]" and a link to "log out."  * Clicking "log out" should change state appropriately, and cause "Log in" to be displayed there. 
-    * For the moment the site should work exactly the same otherwise.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-2. Logged in users should be able view and edit their search history in a pop out menu.
-    * Store a user's searches in `localStorage`.  It can only store key-value pairs as strings, so if you want to store arrays or objects, or more complex data structures, use `JSON.stringify()` before you store it, and `JSON.parse()` when retireving it.
-    * Clicking a search should load it.
-    * Each search should have an `x` next to it that removes it from the history when clicked.
-    * Users that are not logged in should not be able to access the pop-out menu.
-   
-## If you really just can't get enough....
+### `npm run eject`
 
-3. Read up about Firebase and store your search histories and login info there instead.  Don't worry about security.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-4. If you didn't already, use some kind of dope animation for the opening & closing of the menu. 
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
