@@ -1,5 +1,5 @@
 import React from 'react';
-// import GifItem from './GifItem';
+import { ListGroup, ListGroupItem} from 'reactstrap';
 
 const GifList = (props) => {
 	console.log('GifList props: ', props)
@@ -12,9 +12,11 @@ const GifList = (props) => {
 
 	return (
 		<div>
-		<ul>
+		<ListGroup color="grey">
+		<ListGroupItem color="pink">
 		{gifItems}
-		</ul>
+		</ListGroupItem>
+		</ListGroup>
 		</div>
 		)
 }
